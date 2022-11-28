@@ -1,15 +1,16 @@
-<form>
-  <h3>Add a Link</h3>
-  <div>
-    <label for="title">Title:</label>
-    <input name="title" #newtitle>
-  </div>
-  <div>
-    <label for="link">Link:</label>
-    <input name="link" #newlink>
-  </div>
-  <button (click)="addArticle(newtitle, newlink)">
-    Submit link
-  </button> 
-  
-</form>
+<div class="container">
+  <form class="jumbotron">
+      <h3 class="display-4">Prep Verifica</h3>
+      <div class="form-group">
+        <label for="useless">Cose Inutili:</label>
+        <input name="useless" #newuseless class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="spam">Spam:</label>
+        <input name="spam" #newspam class="form-control">
+      </div>
+    <button (click)="addArticle(newuseless, newspam)" class="btn btn-primary">
+      Submit spam
+    </button>
+  </form>
+</div>
